@@ -115,7 +115,9 @@ export default class About extends Page {
       constant: Canvas.viewport.width,
     };
 
-    !this.isMobile && Canvas.scene.add(this.mesh);
+    // Flag removed on request — mesh is created but never added to the scene,
+    // so nothing renders, while all other bounds/layout logic stays intact.
+    // !this.isMobile && Canvas.scene.add(this.mesh);
     const animation = intro({ position, scale, x, opacity });
     animation.play();
 
