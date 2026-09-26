@@ -1,0 +1,53 @@
+extends ../base.pug 
+
+block variables
+  - var template = "contact"
+
+block content 
+  main.contact
+    .contact__wrapper 
+
+      section.contact__heading
+        .contact__heading__wrapper 
+          h1.contact__heading__text(data-bigTitle)
+            span.contact__heading__serif(data-alt="Say") Say
+            span.contact__heading__sans(data-alt="Hi") Hi
+
+      section.contact__body 
+        address.contact__credits 
+          ul.contact__credits__wrapper 
+            li.contact__credit 
+              p.contact__credit__task Original Template:
+              a.contact__credit__link(href="https://github.com/goodyboy301/goodie.work" target="_blank" rel="noopener noreferrer") Goodness Urama
+
+            li.contact__credit 
+              p.contact__credit__task Built By:
+              a.contact__credit__link(href="https://github.com/Hammad-og" target="_blank" rel="noopener noreferrer") Mohammad Hammad
+
+            li.contact__credit 
+              p.contact__credit__task Type:
+              a.contact__credit__link(href="https://fontshare.com/fonts/clash-display" target="_blank" rel="noopener noreferrer") C. Display,
+              a.contact__credit__link(href="https://cdnfonts.com/manuscribe-free.font" target="_blank" rel="noopener noreferrer") ManuScribe F.
+
+        .contact__details 
+          ul.contact__details__wrapper 
+            li.contact__detail 
+              p.contact__detail__type Telegram
+              a.contact__detail__link(href="https://t.me/H4MMXD" target="_blank" rel="noopener noreferrer") @H4MMXD
+
+            li.contact__detail 
+              p.contact__detail__type Github
+              a.contact__detail__link(href="https://github.com/Hammad-og" target="_blank" rel="noopener noreferrer") /Hammad-og
+
+            li.contact__detail 
+              p.contact__detail__type Discord
+              a.contact__detail__link(href="https://discord.com/users/1236627521810989057" target="_blank" rel="noopener noreferrer") EREN
+
+
+            li.contact__detail 
+              p.contact__detail__type Gmail
+              a.contact__detail__link(href="mailto:hammadpvt.2@gmail.com") hammadpvt.2
+
+        section.contact__canvas     
+          .contact__canvas__wrapper    
+            figure.contact__canvas__illustration

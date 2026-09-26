@@ -1,0 +1,45 @@
+extends ../base.pug 
+
+block variables
+  - var template = "work"
+
+block content 
+  main.work
+    .work__wrapper 
+
+      section.work__heading
+        .work__heading__wrapper 
+          h1.work__heading__text(data-midTitle) Work
+          p.work__heading__subtext(data-subTitle)
+            | Two years of building on my own, no employer, 
+            | just a lot of late nights. The fun stuff is 
+            | probably in my playground
+
+      section.work__body
+        .work__experiences 
+          ul.work__experiences__wrapper 
+            li.work__experience 
+              p.work__experience__title(data-first-letter="F" data-other-letters="oundations") Foundations
+              p.work__experience__subdetails Self-taught (2023 - 2024)
+              .work__experience__expand
+                p.work__experience__details 
+                  | Learned to build for the web from scratch: structure, layout,
+                  | and obsessing over the small details before touching anything
+                  | fancy.
+                .work__experience__extradetails
+                  p.work__experience__stack HTML, CSS, JavaScript, Git/GitHub
+                  p.work__experience__role Self-taught (2023 - 2024)
+
+            li.work__experience 
+              p.work__experience__title(data-first-letter="I" data-other-letters="ndependent" data-long) Independent
+              p.work__experience__subdetails Frontend Developer (2024 - present)
+              .work__experience__expand
+                p.work__experience__details 
+                  | Shipped six projects live on Vercel on my own, from browser
+                  | games to a typography-first Qur'an reader, while picking up
+                  | React and Python along the way.
+                .work__experience__extradetails
+                  p.work__experience__stack 
+                    | React, Python, REST APIs, Vercel,
+                    | object oriented javascript 
+                  p.work__experience__role Frontend Developer (2024 - present)

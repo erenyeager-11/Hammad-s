@@ -1,0 +1,25 @@
+extends ../base.pug 
+
+block variables
+  - var template = "home"
+
+block content 
+  main.home
+    .home__wrapper 
+
+      section.home__heading
+        .home__heading__wrapper 
+          h1.home__heading__text(data-bigTitle)
+            span.home__heading__serif(data-alt="Eren") Mohammad
+            span.home__heading__sans(data-alt="Dev") Hammad
+
+      section.home__body 
+        .home__body__wrapper
+          p.home__text__01(data-subTitle) 
+            | Frontend Developer from New Delhi, India. 
+          p.home__text__02(data-suburbTitle) 
+            | Passionate about motion, interactivity and clean UI, and shipping small ideas as real, live websites.
+
+      section.home__canvas     
+        .home__canvas__wrapper    
+          figure.home__canvas__illustration
